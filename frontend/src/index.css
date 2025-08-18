@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global font */
+* {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Active tab underline */
+.active hr {
+  @apply block border-t-2 border-primary;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  @apply hidden;
+}
+
+/* Mobile active menu item styling */
+@media (max-width: 740px) {
+  .active p {
+    @apply text-white bg-primary px-3 py-1 rounded-lg transition-all duration-200;
+  }
+}
