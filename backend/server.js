@@ -37,7 +37,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ['http://localhost:5173', 'http://localhost:5174'],
+    origin: ['https://health-management-and-information-s-murex.vercel.app/', 'https://health-management-and-information-s.vercel.app/'],
     methods: ['GET', 'POST'],
   },
 });
